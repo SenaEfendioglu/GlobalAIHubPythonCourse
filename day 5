@@ -1,1 +1,62 @@
+class Animals():
+    def __init__(self, name):
+        self.name = name
+        print("it is a/an" + " " + self.name)
+            
+animal1= Animals("bird")
+it is a/an bird
+animal2=Animals("rabbit")
+it is a/an rabbit
+class Dogs(Animals):
+    def __init__(self, colour):
+        self.colour = colour
+        print("it's colour is" + " "+ self.colour)
+        
+dog1= Dogs("black")
+​
+it's colour is black
+class Cats(Animals):
+    def __init__(self, gender):
+        self.gender = gender
+        print("its gender is" + " " + self.gender)
+        
+cat1 = Cats("male")
+its gender is male
+class Dogs(Animals):
+    def __init__ (self, name, colour):
+        super().__init__(name)
+        self.colour=colour
+        
+    def print_status(self):
+        print("it is a" + " " + self.name + " " + "and" + " " + "its colour is" +" "+ self.colour)
+class Dogs(Animals):
+    def __init__ (self, name, colour):
+        super().__init__(name)
+        self.colour=colour
+        
+    def print_status(self):
+        print("it is a" + " " + self.name + " " + "and" + " " + "its colour is" +" "+ self.colour)
+new_dog = Dogs ("dog", "brown")
+dir(new_dog)
 
+new_dog.print_status()
+new_dog = Dogs ("dog", "brown")
+dir(new_dog)
+​
+new_dog.print_status()
+it is a/an dog
+it is a dog and its colour is brown
+class Cats(Animals):
+    def __init__ (self, name, gender):
+        super().__init__(name)
+        self.gender = gender
+        
+    def print_status(self):
+        print("it is a" + " " + self.name + " " + "and" + " " + "its gender is" +" "+ self.gender)
+cat
+new_cat = Cats ("cat", "male")
+dir(new_cat)
+​
+new_cat.print_status()
+it is a/an cat
+it is a cat and its gender is male
