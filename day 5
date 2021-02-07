@@ -60,3 +60,5 @@ dir(new_cat)
 new_cat.print_status()
 it is a/an cat
 it is a cat and its gender is male
+
+http://localhost:8888/notebooks/Day%205.ipynb
