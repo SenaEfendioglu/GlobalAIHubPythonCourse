@@ -17,3 +17,5 @@ y=list(range(x+1))
 print(y)
 Please enter an integer: 10
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+http://localhost:8888/notebooks/Day%202.ipynb
