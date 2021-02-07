@@ -1,1 +1,59 @@
-
+class Manager():
+    def __init__(self,name, age):
+        self.name = name
+        self.age = age
+        self.language = []
+        
+    def welcomeManager (self):
+        print("Hello",self.name)
+        
+    def showAge(self):
+        print(self.age)
+        
+    def addLanguage(self,new_lang):
+        print("Adding new language")
+        self.language.append(new_lang)
+        
+    def showInfo(self):
+        print("{} is {} years old".format(self.name,self.age))
+        print("He/She can speak:")
+        for i in self.language:
+              print(i)
+​
+Sena=Manager("Sena",25)
+Sena
+<__main__.Manager at 0x289fa316490>
+Sena.addLanguage( "Spanish" )
+Adding new language
+Sena.showAge()
+25
+Sena.showInfo()
+Sena is 25 years old
+He/She can speak:
+Spanish
+Sena.addLanguage("English")
+Adding new language
+Sena.showInfo()
+Sena is 25 years old
+He/She can speak:
+Spanish
+English
+class Employees(Manager):
+    pass
+employee1=Employees("Nazlı", 30)
+print(employee1.name)
+Nazlı
+employee1.addLanguage("Turkish")
+Adding new language
+employee1.showInfo()
+Nazlı is 30 years old
+He/She can speak:
+Turkish
+English
+employee1.addLanguage("English")
+Adding new language
+employee1.showInfo()
+Nazlı is 30 years old
+He/She can speak:
+Turkish
+English
