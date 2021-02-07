@@ -1,1 +1,37 @@
-
+if (x1 != x and y1==y):
+    print("incorrect username!")
+elif (x1==x and y1!=y):
+    print("incorrect password")
+x= "Sena"
+y= "12345"
+​
+x1= input("Please enter your username:")
+y1= input("Please enter your password:")
+​
+if (x1 != x and y1==y):
+    print("incorrect username!")
+elif (x1==x and y1!=y):
+    print("incorrect password")
+elif (x1!=x and y1!=y):
+    print("incorrect username and password")
+else:
+    print("It's correct and you are logged in now")
+Please enter your username:Sena
+Please enter your password12345
+It's correct and you are logged in now
+d = { "username":"Sena", "password":"12345" }
+​
+x1= input("Please enter your username:")
+y1= input("Please enter your password:")
+​
+if (x1 != d["username"] and y1==d["password"]):
+    print("incorrect username!")
+elif (x1==d["username"] and y1!=d["password"]):
+    print("incorrect password")
+elif (x1!= d["username"] and y1!= d["password"]):
+    print("incorrect username and password")
+else:
+    print("It's correct and you are logged in now")
+Please enter your username:Sena
+Please enter your password:12345
+It's correct and you are logged in now
